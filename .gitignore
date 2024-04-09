@@ -1,0 +1,9 @@
+.env
+.env.production
+.env.staging
+.env.local
+.env.development
+.DS_*
+node_modules
+npm-debug.log
+logs

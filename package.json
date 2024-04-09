@@ -1,0 +1,12 @@
+{
+  "name": "echo-cms-boilerplate",
+  "version": "0.1.0",
+  "description": "Bootstrapped CMS",
+  "main": "index.js",
+  "scripts": {
+    "pull": "docker-compose pull",
+    "dev": "docker-compose build && docker-compose up -d"
+  },
+  "author": "Two-Cat Moon",
+  "license": "MIT"
+}
