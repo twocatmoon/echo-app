@@ -121,7 +121,7 @@ To run this project you'll need the following software installed:
 4. Pull the latest Docker images with `npm run pull`
 5. Run the project with `npm run up`
 
-The frontend will now be available at http://localhost and the Strapi backend at http://localhost/strapi/admin. Make sure port 80 is available for nginx to use.
+The frontend will now be available at http://localhost and the Strapi backend at http://localhost/backend/admin. Make sure port 80 is available for nginx to use.
 
 To run the application in production mode, change `ENVIRONMENT=development` to `ENVIRONMENT=production`.
 
