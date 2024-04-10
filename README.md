@@ -13,7 +13,7 @@
 <h3 align="center">Echo - A Full-Stack Web Application Template</h3>
 
   <p align="center">
-    Echo is a Dockerized full-stack TypeScript web application template, built on Strapi, NextJS, PostgreSQL, and nginx. More than just a Docker Compose file, Echo comes pre-configured with useful libraries, CORS configuration, authentication, media uploads, and boilerplate to get you started quickly.
+    Echo is a Dockerized full-stack TypeScript web application template, built on Strapi, Next.js, PostgreSQL, and nginx. More than just a Docker Compose file, Echo comes pre-configured with useful libraries, CORS configuration, authentication, media uploads, and boilerplate to get you started quickly.
     <br />
     <br />
     <a href="https://github.com/twocatmoon/echo-app/issues/new?labels=bug&template=bug-report---.md">Report Bug</a>
