@@ -119,7 +119,7 @@ To run this project you'll need the following software installed:
 2. Clone your copy of the repo `git clone https://github.com/<your-username>/<your-app>.git`
 3. Copy `.env.example` to `.env` and fill out all the fields
 4. Pull the latest Docker images with `npm run pull`
-5. Run the project with `npm run build`
+5. Run the project with `npm run up`
 
 The frontend will now be available at http://localhost and the Strapi backend at http://localhost/strapi/admin. Make sure port 80 is available for nginx to use.
 
