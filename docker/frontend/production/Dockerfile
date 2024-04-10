@@ -18,7 +18,7 @@ COPY ./frontend/package*.json /app/
 COPY ./.env /app/
 
 # Install dependencies in /app
-RUN nstall --no-audit
+RUN npm ci
 
 # Copy the rest of our Next.js folder into /app
 COPY ./frontend /app
@@ -27,7 +27,7 @@ COPY ./frontend /app
 ENV NODE_ENV=${NODE_ENV}
 
 # Build app
-RUN yarn build
+RUN npm run build
 
 # Ensure port 3005 is accessible to our system
 EXPOSE 3005
