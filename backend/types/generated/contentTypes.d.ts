@@ -368,12 +368,14 @@ export interface ApiExampleExample extends Schema.CollectionType {
     singularName: 'example';
     pluralName: 'examples';
     displayName: 'Example';
+    description: '';
   };
   options: {
     draftAndPublish: true;
   };
   attributes: {
     foo: Attribute.String;
+    cover: Attribute.Media;
     createdAt: Attribute.DateTime;
     updatedAt: Attribute.DateTime;
     publishedAt: Attribute.DateTime;

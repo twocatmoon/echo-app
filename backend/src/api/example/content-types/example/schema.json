@@ -4,7 +4,8 @@
   "info": {
     "singularName": "example",
     "pluralName": "examples",
-    "displayName": "Example"
+    "displayName": "Example",
+    "description": ""
   },
   "options": {
     "draftAndPublish": true
@@ -13,6 +14,16 @@
   "attributes": {
     "foo": {
       "type": "string"
+    },
+    "cover": {
+      "allowedTypes": [
+        "images",
+        "files",
+        "videos",
+        "audios"
+      ],
+      "type": "media",
+      "multiple": false
     }
   }
 }

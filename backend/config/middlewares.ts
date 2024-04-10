@@ -5,7 +5,7 @@ export default ({ env }) => ([
     {
         name: 'strapi::cors',
         config: {
-            origin: env('CORS_ORIGINS').split(',').map((origin) => origin.trim()),
+            origin: env('STRAPI_CORS_ORIGINS').split(',').map((origin) => origin.trim()),
             methods: ['GET', 'POST', 'PUT', 'PATCH', 'DELETE', 'HEAD', 'OPTIONS'],
             headers: ['Content-Type', 'Authorization', 'Origin', 'Accept'],
             keepHeaderOnError: true,
@@ -16,11 +16,11 @@ export default ({ env }) => ([
     {
         name: 'strapi::body',
         config: {
-            formLimit: env('UPLOAD_SIZE_LIMIT', '50') + 'mb',
-            jsonLimit: env('UPLOAD_SIZE_LIMIT', '50') + 'mb',
-            textLimit: env('UPLOAD_SIZE_LIMIT', '50') + 'mb',
+            formLimit: env('STRAPI_UPLOAD_SIZE_LIMIT', '50') + 'mb',
+            jsonLimit: env('STRAPI_UPLOAD_SIZE_LIMIT', '50') + 'mb',
+            textLimit: env('STRAPI_UPLOAD_SIZE_LIMIT', '50') + 'mb',
             formidable: {
-                maxFileSize: Number(env('UPLOAD_SIZE_LIMIT', '50')) * 1000 * 1024,
+                maxFileSize: Number(env('STRAPI_UPLOAD_SIZE_LIMIT', '50')) * 1000 * 1024,
             },
         },
     },

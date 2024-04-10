@@ -6,7 +6,7 @@ export default ({ env }) => ({
                     maxage: 300000
                 },
             },
-            sizeLimit: Number(env('UPLOAD_SIZE_LIMIT', '50')) * 1000 * 1024,
+            sizeLimit: Number(env('STRAPI_UPLOAD_SIZE_LIMIT', '50')) * 1000 * 1024,
         },
     },
 })

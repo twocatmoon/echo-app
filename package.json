@@ -5,7 +5,7 @@
   "main": "index.js",
   "scripts": {
     "pull": "docker-compose pull",
-    "dev": "docker-compose build && docker-compose up -d"
+    "up": "docker-compose build && docker-compose up -d"
   },
   "author": "Two-Cat Moon",
   "license": "MIT"

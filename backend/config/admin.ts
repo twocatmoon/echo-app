@@ -1,14 +1,14 @@
 export default ({ env }) => ({
     url: '/admin',
     auth: {
-        secret: env('ADMIN_JWT_SECRET'),
+        secret: env('STRAPI_ADMIN_STRAPI_JWT_SECRET'),
     },
     apiToken: {
-        salt: env('API_TOKEN_SALT'),
+        salt: env('STRAPI_API_TOKEN_SALT'),
     },
     transfer: {
         token: {
-            salt: env('TRANSFER_TOKEN_SALT'),
+            salt: env('STRAPI_TRANSFER_TOKEN_SALT'),
         },
     },
     flags: {
